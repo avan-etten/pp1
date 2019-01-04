@@ -34,3 +34,14 @@ function average($numbersArray){
 
     return ($average/$total);
 }
+
+function removeDups($numbersArray){
+    $noDups = array();
+
+    foreach($numbersArray as $number){
+        if (!in_array($number, $noDups)) {
+            $noDups[] = $number;
+        }
+    }
+    return $noDups;
+}

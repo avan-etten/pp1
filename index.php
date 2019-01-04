@@ -17,8 +17,11 @@ printArray($numbers);
 
 $largestNumber = largest($numbers);
 $average = average($numbers);
+$noDups = removeDups($numbers);
+printArray($noDups);
 echo "<p>$largestNumber</p>";
 echo "<p>$average</p>";
+
 ?>
 </body>
 </html>
