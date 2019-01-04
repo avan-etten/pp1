@@ -45,3 +45,22 @@ function removeDups($numbersArray){
     }
     return $noDups;
 }
+
+function distribution($numbersArray){
+    $distributedArray = array();
+   $i = min($numbersArray);
+   for ($i; $i<=max($numbersArray); $i++){
+       $j = 0;
+       foreach($numbersArray as $number){
+           if ($number == $i){
+               $j++;
+           }
+       }
+    $distributedArray[$i] = $j;
+   }
+    echo "<p>";
+   foreach($distributedArray as $number => $amount){
+       echo "$number => $amount, ";
+   }
+   echo "</p>";
+}

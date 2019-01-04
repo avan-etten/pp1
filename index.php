@@ -21,7 +21,7 @@ $noDups = removeDups($numbers);
 printArray($noDups);
 echo "<p>$largestNumber</p>";
 echo "<p>$average</p>";
-
+distribution($numbers);
 ?>
 </body>
 </html>
